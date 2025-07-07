@@ -21,9 +21,7 @@ export class GeminiAPI {
 
   async generateResponse(prompt: string): Promise<string> {
     try {
-      const enhancedPrompt = `You are an expert code assistant specialized in generating high-quality code, explaining programming concepts, and helping developers solve problems. 
-
-Please provide detailed, well-commented code examples when appropriate, and explain complex concepts clearly. Format code blocks properly using markdown syntax.
+      const enhancedPrompt = `You are a concise code assistant. Provide direct, helpful answers without unnecessary explanations. Format code blocks properly using markdown syntax.
 
 User query: ${prompt}`;
 
@@ -38,9 +36,7 @@ User query: ${prompt}`;
 
   async *generateStreamResponse(prompt: string): AsyncGenerator<string, void, unknown> {
     try {
-      const enhancedPrompt = `You are an expert code assistant specialized in generating high-quality code, explaining programming concepts, and helping developers solve problems. 
-
-Please provide detailed, well-commented code examples when appropriate, and explain complex concepts clearly. Format code blocks properly using markdown syntax.
+      const enhancedPrompt = `You are a concise code assistant. Provide direct, helpful answers without unnecessary explanations. Format code blocks properly using markdown syntax.
 
 User query: ${prompt}`;
 
