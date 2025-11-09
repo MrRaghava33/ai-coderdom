@@ -1,6 +1,6 @@
 import { GoogleGenerativeAI } from '@google/generative-ai';
 
-const API_KEY = 'AIzaSyBh_d8f1gUvf2fNICLlmThgHQX1hWbQWvE';
+const API_KEY = 'AIzaSyAJjGgRwU0pXA2CbmdnoSTmB1dzWsCiLuI';
 
 export class GeminiAPI {
   private genAI: GoogleGenerativeAI;
